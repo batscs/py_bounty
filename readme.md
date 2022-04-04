@@ -5,7 +5,7 @@
 
 ## Usage:
 ### Roulette:  
-`roulette bet <amount> <your_bet>`  
+`roulette bet <amount> <your_bet>`
 <amount> has to be replaced with the amount you are willing to gamble  
 <your_bet> has to be replaced by one of the following possible bets:  
 - black | the result has to be on a black field
@@ -17,7 +17,7 @@
 - low | the result has to be lower than or exactly 18
 
 ## Blackjack:
-`blackjack bet <amount>`  
+`blackjack bet <amount>`
 <amount> has to be replaced with the amount you are willing to gamble  
 After that you can either hit and take another card or stand and let the dealer play  
 Depending on who has a higher result at the end but lower or exactly 21 wins (or ties!)  
