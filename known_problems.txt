@@ -1,0 +1,2 @@
+- the Ace card in Blackjack doesn't count as both 1 and 11
+- a login system is not yet implemented, only demo account works
