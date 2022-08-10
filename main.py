@@ -55,9 +55,8 @@ def printIntro():
 
 
 def log(msg):
-    now = datetime.now()
 
-    current_time = now.strftime("%H:%M:%S")
+    current_time = datetime.now().strftime("%H:%M:%S")
 
     print(bcolors.green + "[" + current_time + "] " + bcolors.endc + msg)
 
