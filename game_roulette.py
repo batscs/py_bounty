@@ -88,7 +88,7 @@ def play(amount, bet):
     # configuration
     hashed_random_seed = hashlib.sha256(str(random.random()).encode('utf-8')).hexdigest()
     random.seed(hashed_random_seed)
-    rollDuration = random.randint(50, 100)
+    rollDuration = random.randint(80, 90)
     size = 23
     final = int(size / 2)
     deck = [None] * size
@@ -103,7 +103,8 @@ def play(amount, bet):
         deck = rollDeck(deck)
         msgDeck = deckToString(deck, final)
         sys.stdout.write('\r' + msgDeck)
-        ms = (pow(x, 2.3) / rollDuration) * 0.001
+        old_ms = (pow(x, 2.3) / rollDuration) * 0.001
+        ms = (0.06 * (x*x)) * 0.001
         time.sleep(ms)
         result = deck[final]
 
